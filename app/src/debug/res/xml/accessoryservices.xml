@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <application name="Basic">
+        <serviceProfile
+            name="MyMessage"
+            id="/org/example/myapp/my_message"
+            role="provider"
+            serviceImpl="org.example.myapplication.ProviderService"
+            serviceLimit="ANY"
+            serviceTimeout="10"
+            version="1.0">
+            <supportedTransports>
+                <transport type="TRANSPORT_BT" />
+                <transport type="TRANSPORT_WIFI" />
+            </supportedTransports>
+            <serviceChannel
+                dataRate="low"
+                id="110"
+                priority="low"
+                reliability="enable" />
+        </serviceProfile>
+    </application>
+</resources>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+
+        <item
+            android:id="@+id/map"
+            android:checked="false"
+            android:icon="@drawable/mapmarkertaxi"
+            android:title="Map" />
+        <item
+            android:id="@+id/starred"
+            android:checked="false"
+            android:icon="@drawable/trajets"
+            android:title="Trajets Effectués" />
+
+        <item
+            android:checked="false"
+            android:id="@+id/sent_mail"
+            android:icon="@drawable/user"
+            android:title="Profil" />
+
+
+
+        <item
+            android:id="@+id/inbox"
+            android:checked="false"
+            android:icon="@drawable/off"
+            android:title="Déconnecte"
+            />
+        <item
+            android:id="@+id/allmail"
+            android:checked="false"
+            android:icon="@drawable/info"
+            android:title="A Propos" />
+        <!--<item
+            android:id="@+id/trash"
+            android:checked="false"
+            android:icon="@drawable/ic_delete_black"
+            android:title="@string/trash_string" />
+        <item
+            android:id="@+id/spam"
+            android:checked="false"
+            android:icon="@drawable/ic_error_black"
+            android:title="@string/spam_string" />-->
+
+    </group>
+</menu>

@@ -1,0 +1,76 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <android.support.design.widget.CoordinatorLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/map"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginTop="10dp" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="8dp">
+            <EditText android:id="@+id/input_addr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:hint="Addrese"
+                android:textColor="@color/black"
+                android:layout_marginRight="90dp"
+                android:layout_marginLeft="20dp"/>
+        </android.support.design.widget.TextInputLayout>
+        <ImageButton android:src="@drawable/microphone"
+            android:id="@+id/share"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="21dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="20dp"
+            app:layout_anchor="@id/input_addr"
+            app:layout_anchorGravity="top|right|end"
+            android:background="#f8f7f5"
+            android:padding="10dp"/>
+        <view
+            android:id="@+id/fab_adresse"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_margin="16dp"
+            android:clickable="true"
+            android:src="@drawable/ic_nav"
+            app:layout_anchor="@id/map"
+            app:layout_anchorGravity="bottom|right|end"
+            app:backgroundTint="#faba10"
+            app:rippleColor="#FFF"
+            class="mbanje.kurt.fabbutton.FabButton"
+            android:color="#faba10"
+            app:fbb_showShadow="true"
+            android:visibility="visible"
+            android:indeterminate="false"
+            android:max="100"
+            app:fbb_autoStart="true"
+            app:fbb_progressColor="#000"
+            app:fbb_progressWidthRatio="0.1"
+            app:fbb_endBitmap="@drawable/checkmark"
+            app:fbb_showEndBitmap="true"
+            app:fbb_hideProgressOnComplete="true"
+            />
+    </android.support.design.widget.CoordinatorLayout>
+
+
+</LinearLayout>
